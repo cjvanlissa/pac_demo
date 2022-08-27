@@ -1,6 +1,16 @@
 # Readme <a href='https://osf.io/zcvbs/'><img src='worcs_icon.png' align="right" height="139" /></a>
 
-<!-- Please add a brief introduction to explain what the project is about    -->
+This project illustrates the basics of Preregistration-As-Code using a simple
+example of comparing shoesize between men and women.
+Note that there are two tagged releases on GitHub:
+"preregistration", which contains the state of the project at preregistration,
+and "final_analyses", which contains the final analyses with a 'necessary' deviation from
+the preregistered analysis plans.
+Using GitHub's compare tool, you can see exactly what changes were made between the preregistration and final analyses:
+
+<https://github.com/cjvanlissa/pac_demo/compare/preregistration...final_analyses>
+
+Additionally, a manually curated change log is available in `changelog.txt`
 
 ## Where do I start?
 
