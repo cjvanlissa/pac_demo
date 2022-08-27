@@ -15,7 +15,9 @@ code <!--and data--> are available at
 
 # Analysis
 
-I performed a t-test, which is sourced here from the file `analysis.R`:
+I performed a one-sided t-test to test the hypothesis that men’s shoe
+sizes are greater than women’s, which is sourced here from the file
+`analysis.R`:
 
 ``` r
 library("worcs")
@@ -25,17 +27,17 @@ library("worcs")
 # (whichever is available), to allow anyone to reproduce your code:
 load_data()
 
-result <- t.test(shoesize ~ sex, dat)
+result <- t.test(shoesize ~ sex, dat, alternative = "greater")
 ```
 
 # Results
 
 There was a significant difference between men’s
-(![M = 42.85](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;M%20%3D%2042.85 "M = 42.85"))
+(![M = 41.75](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;M%20%3D%2041.75 "M = 41.75"))
 and women’s men’s
-(![M = 37.86](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;M%20%3D%2037.86 "M = 37.86"))
+(![M = 39.35](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;M%20%3D%2039.35 "M = 39.35"))
 shoe sizes,
-![p \< 0.01](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;p%20%3C%200.01 "p < 0.01").
+![p = 0.02](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;p%20%3D%200.02 "p = 0.02").
 
 Shoe sizes were distributed as follows:
 

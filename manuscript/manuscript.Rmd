@@ -32,7 +32,7 @@ This manuscript uses the Workflow for Open Reproducible Code in Science [@vanlis
 
 # Analysis
 
-I performed a t-test, which is sourced here from the file `analysis.R`:
+I performed a one-sided t-test to test the hypothesis that men's shoe sizes are greater than women's, which is sourced here from the file `analysis.R`:
 
 ```{r analysis, file = "../analysis.R"}
 ```

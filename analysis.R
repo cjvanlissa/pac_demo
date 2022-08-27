@@ -5,4 +5,4 @@ library("worcs")
 # (whichever is available), to allow anyone to reproduce your code:
 load_data()
 
-result <- t.test(shoesize ~ sex, dat)
+result <- t.test(shoesize ~ sex, dat, alternative = "greater")
