@@ -1,0 +1,55 @@
+---
+title: "So, what about feet?"
+output: github_document
+date: '`r format(Sys.time(), "%d %B, %Y")`'
+bibliography: references.bib
+knit: worcs::cite_all
+---
+
+```{r setup, include=FALSE, echo = FALSE}
+library("worcs")
+# This is a convenience function for reporting statistics in manuscripts
+report <- function (x, digits = 2, equals = TRUE){
+  equal_sign <- "= "
+  if (abs(x) < 10^-digits) {
+    equal_sign <- "< "
+    outstring <- 10^-digits
+  } else {
+    outstring <- formatC(x, digits = digits,format = "f")
+  }
+  paste0(equal_sign, outstring)
+}
+# Set some options for the way code is displayed
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
+```
+
+I was curious to find out whether there is a difference in mean shoe size between men and women, so I did a little study with a convenience sample of attendees at the Open Science Festival.
+
+This manuscript uses the Workflow for Open Reproducible Code in Science [@vanlissaWORCSWorkflowOpen2020] to ensure reproducibility and transparency. All code <!--and data--> are available at <https://github.com/cjvanlissa/pac_demo.git>.
+
+<!--The function below inserts a notification if the manuscript is knit using synthetic data. Make sure to insert it after load_data().-->
+`r notify_synthetic()`
+
+# Analysis
+
+I performed a t-test, which is sourced here from the file `analysis.R`:
+
+```{r analysis, file = "../analysis.R"}
+```
+
+# Results
+
+There was a `r c("non-significant", "significant")[(result[["p.value"]] < .05)+1]` difference between men's ($M `r report(result[["estimate"]][1])`$)
+and women's men's ($M `r report(result[["estimate"]][2])`$)
+shoe sizes, $p `r report(result[["p.value"]])`$.
+
+Shoe sizes were distributed as follows:
+
+```{r histogram, echo=FALSE}
+library(ggplot2)
+ggplot(data = dat, aes(x = shoesize, color = sex, fill = sex)) +
+  geom_density(alpha = .2) +
+  theme_bw()
+```
+
+# References
