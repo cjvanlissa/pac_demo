@@ -1,4 +1,4 @@
-Codebook created on 2022-08-27 at 2022-08-27 08:08:33
+Codebook created on 2022-08-27 at 2022-08-27 09:17:32
 ================
 
 A codebook contains documentation and metadata describing the contents,
@@ -6,14 +6,14 @@ structure, and layout of a data file.
 
 ## Dataset description
 
-The data contains 30 cases and 2 variables.
+The data contains 23 cases and 2 variables.
 
 ## Codebook
 
-| name     | type      |   n | missing | unique |  mean | median | mode | mode_value |   sd |   v |   min |   max | range | skew | skew_2se |  kurt | kurt_2se |
-|:---------|:----------|----:|--------:|-------:|------:|-------:|-----:|:-----------|-----:|----:|------:|------:|------:|-----:|---------:|------:|---------:|
-| sex      | character |  30 |       0 |      3 |       |        | 15.0 | Men        |      | 0.5 |       |       |       |      |          |       |          |
-| shoesize | numeric   |  30 |       0 |     30 | 40.36 |   40.4 | 40.4 |            | 3.22 |     | 34.89 | 47.12 | 12.23 | 0.13 |     0.16 | -1.12 |    -0.67 |
+| name     | type      |   n | missing | unique |  mean | median | mode | mode_value |   sd |    v |  min |  max | range | skew | skew_2se | kurt | kurt_2se |
+|:---------|:----------|----:|--------:|-------:|------:|-------:|-----:|:-----------|-----:|-----:|-----:|-----:|------:|-----:|---------:|-----:|---------:|
+| sex      | character |  23 |       0 |      3 |       |        |   17 | Women      |      | 0.39 |      |      |       |      |          |      |          |
+| shoesize | numeric   |  23 |       0 |     12 | 39.98 |     39 |   39 |            | 2.35 |      | 36.5 | 44.5 |     8 | 0.51 |     0.53 | -0.9 |    -0.48 |
 
 ### Legend
 

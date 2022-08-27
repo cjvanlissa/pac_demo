@@ -1,5 +1,5 @@
 ---
-title: "Codebook created on 2022-08-27 at 2022-08-27 08:08:33"
+title: "Codebook created on 2022-08-27 at 2022-08-27 09:17:32"
 output: github_document
 ---
 
@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = FALSE, results = 'asis')
 A codebook contains documentation and metadata describing the contents, structure, and layout of a data file.
 
 ## Dataset description
-The data contains 30 cases and 2 variables.
+The data contains 23 cases and 2 variables.
 
 ## Codebook
 

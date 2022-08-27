@@ -8,4 +8,4 @@ data:
     codebook: codebook_dat.Rmd
     labels: value_labels_dat.yml
 checksums:
-  dat.csv: 2b5a1eaff13aa466aceb77a8c6847c66
+  dat.csv: 5047a65c08700f502d02a1febb76f195

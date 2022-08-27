@@ -8,8 +8,7 @@ library(worcs)
 
 # Generate one dataset, use set.seed() to make it reproducible.
 # This code will be replaced with code to load the real data upon collection.
-set.seed(1985)
-dat <- generate_data()
+dat <- read.csv("myrealdata.csv")
 
 # Remove outliers
 dat <- dat[!(dat$shoesize < 36 | dat$shoesize > 49), ]
